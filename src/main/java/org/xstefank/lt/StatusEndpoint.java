@@ -9,6 +9,6 @@ public class StatusEndpoint {
     @GET
     @Path("/get")
     public String testGet() {
-        return "Test GET invoked successfully";
+        return "Test GET invoked successfully changed";
     }
 }
