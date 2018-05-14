@@ -1,8 +1,10 @@
-JIRA: <WFLY>
+JIRA: https://issues.jboss.org/browse/WFLY-
 
 Thanks for submitting your Pull Request!
 
 Please make sure your PR meets the following requirements:
+- [ ] Pull Request title is properly formatted: `[WFLY-XYZ] Subject` or `WFLY-XYZ Subject`
+- [ ] Pull Request contains link to the JIRA issue(s)
 - [ ] Pull Request contains description of the issue(s)
 - [ ] Pull Request does not include fixes for issues other than the main ticket
 - [ ] Attached commits represent units of work and are properly formatted
