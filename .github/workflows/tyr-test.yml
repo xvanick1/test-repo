@@ -1,0 +1,19 @@
+name: Tyr test
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, edited]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  printJob:
+    name: Print event
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github.event) }}
+        run: |
+          echo "$GITHUB_CONTEXT"
