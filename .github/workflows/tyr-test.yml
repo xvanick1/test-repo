@@ -1,4 +1,4 @@
-name: Tyr test
+name: Tyr
 
 on:
   pull_request:
@@ -8,12 +8,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  printJob:
-    name: Print event
+  verify:
     runs-on: ubuntu-latest
     steps:
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github.event) }}
-        run: |
-          echo "$GITHUB_CONTEXT"
+      - name: Tyr PR verification
+        uses: xstefank/tyr-action@dev
+        with:
+          formatUrl: https://raw.githubusercontent.com/xstefank/test-repo/master/.github/format.yaml
+          token: '${{ secrets.GITHUB_TOKEN }}'
