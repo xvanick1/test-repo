@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Tyr PR verification
-        uses: xstefank/tyr-action@dev
+        uses: xstefank/tyr-action@main
         with:
           formatUrl: https://raw.githubusercontent.com/xstefank/test-repo/master/.github/format.yaml
           token: ${{ secrets.GITHUB_TOKEN }}
-          pushStatus: false
+          pushStatus: true
