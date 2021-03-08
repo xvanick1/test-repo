@@ -16,4 +16,4 @@ jobs:
         with:
           formatUrl: https://raw.githubusercontent.com/xstefank/test-repo/master/.github/format.yaml
           token: ${{ secrets.GITHUB_TOKEN }}
-          pushStatus: true
+          pushStatus: false
