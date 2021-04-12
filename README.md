@@ -1,5 +1,5 @@
 
 # test-repo
 
-Doooooo or do not, there is no try
+Doooo or do not, there is no try..
 
